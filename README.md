@@ -16,3 +16,8 @@ $ cd wp-local
 $ docker-compose up -d
 ```
 
+## log in to conti¥ainer's shell
+
+```zsh
+$ docker exec -it CONTAINER ID /bin/bash
+```
