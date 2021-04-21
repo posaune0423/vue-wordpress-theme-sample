@@ -1,4 +1,4 @@
-# docker-wordpress
+# vue-wordpress-theme-sample
 
 This repository is based on [here](https://github.com/viralpatel/wp-docker) created by [Viral Patel](https://github.com/viralpatel)
 
