@@ -15,9 +15,12 @@ services:
   wordpress:
     depends_on:
       - db
-    image: wordpress:5.1.1-php7.3-apache
+    build:
+      context: .
+      dockerfile: wordpress_Dockerfile
+    tty: true
     ports:
-      - "8000:80"
+      - "8080:8080"
     restart: always
     environment:
       WORDPRESS_DB_HOST: db:3306

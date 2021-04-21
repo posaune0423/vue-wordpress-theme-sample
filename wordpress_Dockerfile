@@ -1,0 +1,4 @@
+FROM wordpress:5.1.1-php7.3-apache
+
+RUN curl -sL https://deb.nodesource.com/setup_10.x | bash -
+RUN	apt-get install -y nodejs
