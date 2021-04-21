@@ -19,5 +19,5 @@ $ docker-compose up -d
 ## log in to container's shell
 
 ```zsh
-$ docker exec -it $(coker ps -aqf) /bin/bash
+$ docker exec -it $(docker ps -aqf "name=docker-wordpress_wordpress") /bin/bash
 ```
