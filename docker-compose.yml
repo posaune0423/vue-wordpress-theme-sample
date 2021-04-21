@@ -20,7 +20,7 @@ services:
       dockerfile: wordpress_Dockerfile
     tty: true
     ports:
-      - "8080:8080"
+      - "8000:80"
     restart: always
     environment:
       WORDPRESS_DB_HOST: db:3306
