@@ -27,4 +27,4 @@ then automatically apache web server start on http://localhost:8000
 $ docker exec -it $(docker ps -aqf "name=docker-vue-wordpress-theme-sample_wordpress") /bin/bash
 ```
 
-#### Here, you are get ready for developing your own awesome theme !
+#### Now, you are get ready for developing your own awesome theme !
