@@ -6,4 +6,4 @@ RUN curl -sL https://deb.nodesource.com/setup_10.x | bash
 RUN curl -o- -L https://yarnpkg.com/install.sh | bash
 RUN export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 RUN	apt-get install -y nodejs \
-    && rm -rf /var/lib/apt/lists/*
+    && rm -rf ~/var/lib/apt/lists/*
