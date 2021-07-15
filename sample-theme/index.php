@@ -5,6 +5,7 @@
 	<meta charset="<?php bloginfo('charset'); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
+    <link rel="icon" type="image/x-icon" href="src/static/favicon.ico">
 	<meta name="theme-color" content="#42b983">
 	<?php if (is_front_page()) : ?>
 		<meta name="description" content="<?php bloginfo('description'); ?>">

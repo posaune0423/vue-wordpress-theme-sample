@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /wp-admin/
+{% comment %} Allow: /wp-admin/admin-ajax.php {% endcomment %}
