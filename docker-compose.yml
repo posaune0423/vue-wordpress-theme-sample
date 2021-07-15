@@ -1,4 +1,4 @@
-version: '3'
+version: "3"
 
 services:
   db:
@@ -21,16 +21,16 @@ services:
     tty: true
     ports:
       - "8000:80"
-    restart: always
+    # restart: always
     environment:
       WORDPRESS_DB_HOST: db:3306
       WORDPRESS_DB_USER: wordpress
       WORDPRESS_DB_PASSWORD: wordpress
     working_dir: /var/www/html
     volumes:
-      - ./wp-content:/var/www/html/wp-content
-      - node_modules:/var/www/html/wp-content/themes/sample-theme/node_modules
+      - ./sample-theme:/var/www/html/wp-content/themes/sample-theme
       - ./uploads.ini:/usr/local/etc/php/conf.d/uploads.ini
+      - node_modules:/var/www/html/wp-content/themes/sample-theme/node_modules
 volumes:
-  node_modules:
   db_data:
+  node_modules:
