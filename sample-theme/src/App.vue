@@ -1,14 +1,27 @@
 <template>
   <div>
     <v-app>
-      <router-view />
+      <the-header />
+      <v-main>
+        <v-container fluid>
+          <router-view></router-view>
+        </v-container>
+      </v-main>
+      <the-footer />
     </v-app>
   </div>
 </template>
 
 <script>
+import TheHeader from '@/components/Header';
+import TheFooter from '@/components/Footer';
+
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    TheHeader,
+    TheFooter
+  }
 };
 </script>
 
