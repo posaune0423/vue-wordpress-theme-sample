@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import Top from '@/pages/Top';
-import About from '@/pages/About';
+import Top from '@/views/Top';
+import About from '@/views/About';
 
 Vue.use(Router);
 
