@@ -3,8 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build:dev": "webpack --mode development --watch",
     "build": "webpack --mode production",
+    "build:dev": "webpack --mode development",
+    "build:watch": "webpack --mode development --watch",
     "start": "webpack --mode development --watch & webpack",
     "dev": "webpack serve --config ./webpack.config.js",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
