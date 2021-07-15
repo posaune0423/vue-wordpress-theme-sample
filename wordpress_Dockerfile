@@ -1,9 +1,12 @@
-FROM wordpress:5.1.1-php7.3-apache
+FROM wordpress:latest
 
-RUN apt-get update && apt-get -y upgrade
+RUN apt-get -y update
+RUN apt-get install -y gnupg
+RUN curl -sL https://deb.nodesource.com/setup_14.x | bash -
+RUN apt-get install -y nodejs
+RUN npm install npm@latest -g
+RUN npm install yarn -g
 
-RUN curl -sL https://deb.nodesource.com/setup_10.x | bash
-RUN curl -o- -L https://yarnpkg.com/install.sh | bash
-RUN export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
-RUN	apt-get install -y nodejs \
-    && rm -rf ~/var/lib/apt/lists/*
+COPY ./wp-content/themes/sample-theme/package.json /wp-content/themes/sample-theme
+WORKDIR /var/www/wp-content/themes/sample-theme
+CMD [ "yarn", "install" ]
