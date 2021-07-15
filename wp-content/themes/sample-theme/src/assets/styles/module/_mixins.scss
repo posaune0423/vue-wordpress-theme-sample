@@ -1,0 +1,17 @@
+@mixin pc-screen() {
+  @media (min-width: #{$w_breakpoint}) {
+    @content;
+  }
+}
+
+@mixin sp-screen() {
+  @media (max-width: #{$w_breakpoint - 1}) {
+    @content;
+  }
+}
+
+@mixin mini-sp-screen() {
+  @media (max-width: #{$w_breakpoint_minisp}) {
+    @content;
+  }
+}
