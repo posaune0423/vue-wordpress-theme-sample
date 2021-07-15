@@ -7,9 +7,9 @@
 .DS_Store
 
 # wordpress default themes
+wp-content/themes/twentytwenty/
+wp-content/themes/twentytwentyone/
 wp-content/themes/twentynineteen/
-wp-content/themes/twentyseventeen/
-wp-content/themes/twentysixteen/
 
 # wordpress default plugins
 wp-content/plugins/akismet/
