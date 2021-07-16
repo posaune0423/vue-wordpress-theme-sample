@@ -18,12 +18,12 @@ function load_vue_scripts()
         true
     );
 
-    wp_enqueue_style(
-        'vuejs-wordpress-theme-starter-css',
-        get_stylesheet_directory_uri() . '/dist/style.css',
-        null,
-        filemtime(get_stylesheet_directory() . '/dist/style.css')
-    );
+    // wp_enqueue_style(
+    //     'vuejs-wordpress-theme-starter-css',
+    //     get_stylesheet_directory_uri() . '/dist/style.css',
+    //     null,
+    //     filemtime(get_stylesheet_directory() . '/dist/style.css')
+    // );
 }
 add_action('wp_enqueue_scripts', 'load_vue_scripts', 100);
 
