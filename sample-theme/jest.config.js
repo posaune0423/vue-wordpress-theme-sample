@@ -15,5 +15,6 @@ module.exports = {
     '!./tests/**',
     '!**/node_modules/**'
   ],
-  setupFiles: ['./tests/unit/setup.js']
+  setupFiles: ['./tests/setup.js'],
+  testEnvironment: 'jsdom'
 };
