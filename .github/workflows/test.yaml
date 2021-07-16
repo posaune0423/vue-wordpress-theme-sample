@@ -1,0 +1,29 @@
+name: test & lint
+# If at least one path matches a pattern in the paths filter, the workflow runs.
+on:
+    push:
+        branches:
+            - master
+        paths:
+            - "sample-theme/**"
+    pull_request:
+        branches:
+            - master
+        paths:
+            - "sample-theme/**"
+# Specify the working directory for all run steps in a workflow
+defaults:
+    run:
+        working-directory: sample-theme
+
+jobs:
+    ci-test:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v2
+            - name: Install Packages by Yarn
+              run: yarn install
+            - name: Lint files by eslint
+              run: yarn lint
+            - name: start test by Jest and json-server
+              run: yarn ci
