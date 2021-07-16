@@ -3,12 +3,12 @@ name: test & lint
 on:
     push:
         branches:
-            - master
+            - main
         paths:
             - "sample-theme/**"
     pull_request:
         branches:
-            - master
+            - main
         paths:
             - "sample-theme/**"
 # Specify the working directory for all run steps in a workflow
