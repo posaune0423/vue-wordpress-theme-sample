@@ -34,6 +34,8 @@ then automatically apache web server start on http://localhost:8000
 
 ```bash
 $ docker compose exec wordpress bash -c "cd wp-content/themes/sample-theme && yarn build:dev"
+# Or just in your host OS
+$ yarn build:dev
 ```
 
 #### Now, you are get ready for developing your own awesome theme !
