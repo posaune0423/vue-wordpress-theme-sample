@@ -1,5 +1,7 @@
 # vue-wordpress-theme-sample
 
+[![test & lint](https://github.com/posaune0423/vue-wordpress-theme-sample/actions/workflows/test.yaml/badge.svg)](https://github.com/posaune0423/vue-wordpress-theme-sample/actions/workflows/test.yaml)
+
 This is sample wordpress Vue.js theme settings working on Docker.
 
 I really respect settings below
