@@ -37,3 +37,18 @@ $ docker compose exec wordpress bash -c "cd wp-content/themes/sample-theme && ya
 ```
 
 #### Now, you are get ready for developing your own awesome theme !
+
+### Reference
+
+https://developer.wordpress.org/rest-api/reference/
+
+### If you got stuck with enable WP REST API
+
+please try this out
+
+-   Browse to http://yoursitename.wpengine.com/wp-json/wp/v2/posts
+    -   get 404
+-   Go to admin, settings, permalinks, choose "Post Name"
+    -   Click "Save Changes"
+-   Browse to http://yoursitename.wpengine.com/wp-json/wp/v2/posts
+    -   success. page displays JSON response
