@@ -54,3 +54,7 @@ please try this out
     -   Click "Save Changes"
 -   Browse to http://yoursitename.wpengine.com/wp-json/wp/v2/posts
     -   success. page displays JSON response
+
+
+### How to get static page
+https://developer.wordpress.org/rest-api/reference/pages/#definition-example-request
