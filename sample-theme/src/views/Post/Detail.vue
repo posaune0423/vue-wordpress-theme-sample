@@ -7,7 +7,12 @@
       <v-img :src="post.featured_image.src" max-width="400" />
     </div>
     <div class="my-3">
-      <v-chip v-for="(name, i) in post.category_name" :key="i" small class="mx-2">
+      <v-chip
+        v-for="(name, i) in post.category_name"
+        :key="i"
+        small
+        class="mx-2"
+      >
         {{ name }}
       </v-chip>
     </div>

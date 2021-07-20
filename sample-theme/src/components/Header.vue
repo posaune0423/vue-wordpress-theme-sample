@@ -2,10 +2,7 @@
   <v-app-bar app>
     <v-menu offset-y>
       <template v-slot:activator="{ on, attrs }">
-        <v-app-bar-nav-icon
-          v-bind="attrs"
-          v-on="on"
-        ></v-app-bar-nav-icon>
+        <v-app-bar-nav-icon v-bind="attrs" v-on="on"></v-app-bar-nav-icon>
       </template>
 
       <v-list>
@@ -38,7 +35,7 @@
 
 <script>
 export default {
-  name: 'TheHeader',
+  name: 'TheHeader'
 };
 </script>
 
