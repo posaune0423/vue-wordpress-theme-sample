@@ -20,7 +20,7 @@ export default {
   methods: {
     search() {
       if (this.searchQuery.replace(/ |　/g, '')) {
-        router.push(`/articles/search?q=${this.searchQuery}`);
+        this.$router.push(`/articles/search?q=${this.searchQuery}`);
       }
     }
   }
